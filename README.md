@@ -1,4 +1,4 @@
-# Garry's Mod DXR On
+# Garry's Mod DXR On (LIGHT CELL version)
 
 Binary module that renders the GMod environment almost entirely directly using DirectX Raytracing via NVIDIA's [Falcor framework](https://developer.nvidia.com/falcor).  
 
