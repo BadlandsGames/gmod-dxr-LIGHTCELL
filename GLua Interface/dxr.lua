@@ -2,9 +2,9 @@ if SERVER then return end
 
 PLR = LocalPlayer()
 
-print("=====LOADING GARRY'S MOD DIRECTX RAYTRACING=====")
+print("=====LOADING RAY/PATH TRACING=====")
 require("GModDXR") -- Import the binary module
-if not LaunchFalcor then error("GModDXR: Failed to import C functions") end
+if not LaunchFalcor then error("GModDXVKR: Failed to import C functions") end
 
 --[[
 	World
@@ -12,7 +12,7 @@ if not LaunchFalcor then error("GModDXR: Failed to import C functions") end
 local worldVertices = {}
 
 -- Build meshes from world
-print("GModDXR: Triangulating world...")
+print("GModDXVKR: Triangulating world...")
 local function TriangulateSurface(surface)
 	for i = 3, #surface do
 		local len = #worldVertices
@@ -34,7 +34,7 @@ end
 --[[
 	Initialise and launch Falcor application
 ]]
-print("GModDXR: Launching Falcor...")
+print("GModDXVKR: Launching Falcor...")
 LaunchFalcor(
 	worldVertices,
 	#worldVertices,
